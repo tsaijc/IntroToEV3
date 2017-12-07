@@ -16,4 +16,19 @@ Authors: Dave Fisher and PUT_YOUR_NAME_HERE.
 #     Hint: This program can be done in as little as 2 lines of code (1 import, 1 function call)
 #   Feel free to run it, change it, and run it again with any message you like.
 #   This program is simple, but if you can do this, then you have the tools to do FAR more.
+# command lines
+# ls is list, pwd is wehre u r on the robot, cd + cs + tab, cd .. is go back one is changing directory?
+# rm = remove, -r(ecursively) or -rf(orcefully), use cd csse120/samples/ or wtv, then ls -lah, bleh.
+# chmod +x makes the file executable
 # ------------------------------------------------------------------
+
+import ev3dev.ev3 as ev3
+
+def main():
+    """ Creates the LargeMotor objects and passes them to other functions. """
+    print("--------------------------------------------")
+    print("  Say Your Name")
+    print("--------------------------------------------")
+    ev3.Sound.speak("Jocelyn can use EV3").wait()
+
+main()
